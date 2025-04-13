@@ -1,0 +1,148 @@
+
+.main-footer {
+  background-color: #000; 
+  color: #fff;          
+  font-family: Arial, sans-serif;
+  padding: 2rem;
+}
+
+.footer-subscribe {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.subscribe-text h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+.subscribe-text p {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.subscribe-form {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+.subscribe-form input[type="email"] {
+  padding: 0.6rem 0.8rem;
+  font-size: 0.9rem;
+  border: 1px solid #555;
+  background: #111;
+  color: #fff;
+  outline: none;
+}
+.subscribe-form button {
+  padding: 0.6rem 1rem;
+  background: #333;
+  border: 1px solid #555;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+}
+.subscribe-form button:hover {
+  background: #444;
+}
+
+.footer-divider {
+  border: none;
+  border-top: 1px solid #333;
+  margin: 1rem 0;
+}
+
+.footer-columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer-col {
+  flex: 1 1 200px;
+  min-width: 150px;
+}
+
+.footer-col h4 {
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer-col ul li {
+  margin-bottom: 0.4rem;
+}
+.footer-col ul li a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.2s;
+}
+.footer-col ul li a:hover {
+  color: #fff; 
+}
+
+.contact-col p {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+.currency-note {
+  font-size: 0.75rem;
+  color: #999;
+  margin-top: 0.5rem;
+}
+
+.follow-col .social-icons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.follow-col .icon {
+  background: #111;
+  padding: 0.5rem;
+  cursor: pointer;
+  font-size: 0.8rem;
+  border: 1px solid #333;
+}
+
+.payment-icons {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+.payment-icons img {
+  height: 24px;
+  width: auto;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .footer-subscribe {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .subscribe-form {
+    padding-bottom: 1rem;
+  }
+}
+@media (max-width: 480px) {
+  .footer-columns {
+    flex-direction: column;
+  }
+}

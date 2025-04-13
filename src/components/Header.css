@@ -1,0 +1,116 @@
+
+.main-header {
+  width: 100%;
+  border-bottom: 1px solid #f0f0f0;
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+.header-left .brand-icon {
+  width: 40px;
+  height: auto;
+}
+
+.header-center {
+  flex: 1;
+  text-align: center;
+}
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.icon {
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+.icon .brand-icon {
+  width: 24px;
+  height: auto;
+}
+
+.lang-dropdown {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.9rem;
+}
+
+.header-bottom {
+  border-top: 1px solid #f0f0f0;
+  padding: 0.5rem 0;
+  text-align: center; 
+}
+
+.header-bottom nav ul {
+  list-style: none;
+  display: inline-flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.header-bottom nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.header-bottom nav ul li a:hover {
+  color: #eb5729;
+}
+
+@media (max-width: 768px) {
+  .header-top {
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+  .header-center {
+    order: 1; 
+    text-align: center;
+  }
+  .header-left, .header-right {
+    order: 2;
+  }
+  .header-right {
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .header-bottom nav ul {
+    gap: 1rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .header-top {
+    padding: 1rem;
+  }
+  .brand-icon {
+    width: 30px;
+  }
+  .logo {
+    font-size: 1.5rem;
+  }
+  .header-bottom nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
